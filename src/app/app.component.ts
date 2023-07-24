@@ -12,12 +12,15 @@ interface IUser {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  isAppLoading = true
+  appTitle = 'Instagram'
+  text = ''
 
-  constructor() {
-    setTimeout(()=> {
-      this.isAppLoading = false
-    },3000)
+  changeTitleHandler() {
+    this.appTitle = 'it-incubator'
+  }
+
+  changeTextHandler(event: Event) {
+    this.text=(event.currentTarget as HTMLInputElement).value
   }
 }
 
