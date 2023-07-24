@@ -12,10 +12,12 @@ interface IUser {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  appTitle = 'Instagram'
-  user: IUser = {
-    age: 32,
-    name: 'Ivan'
+  isAppLoading = true
+
+  constructor() {
+    setTimeout(()=> {
+      this.isAppLoading = false
+    },3000)
   }
 }
 
