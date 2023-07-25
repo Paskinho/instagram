@@ -12,7 +12,6 @@ interface IUser {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  appTitle = 'Instagram'
-  text = 'start value'
+
 }
 
