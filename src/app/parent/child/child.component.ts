@@ -1,4 +1,5 @@
 import {Component, Input} from "@angular/core";
+import {Address} from "../parent.component";
 
 @Component({
   selector: 'inst-child',
@@ -9,4 +10,5 @@ import {Component, Input} from "@angular/core";
 export class ChildComponent {
   name = "Steven"
   @Input() surnameProps?: string
+  @Input() address?: Address
 }
