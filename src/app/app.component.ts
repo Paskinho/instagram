@@ -13,15 +13,6 @@ interface IUser {
 })
 export class AppComponent {
   appTitle = 'Instagram'
-  text = ''
-
-  changeTitleHandler() {
-    this.appTitle = 'it-incubator'
-  }
-
-  changeTextHandler(event: Event) {
-    this.text=(event.currentTarget as HTMLInputElement).value
-  }
+  text = 'start value'
 }
-
 

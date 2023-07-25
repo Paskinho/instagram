@@ -1,5 +1,2 @@
-<h1>{{appTitle}}</h1>
-<button (click)="changeTitleHandler()">Change Title</button>
-<hr/>
 <h2>{{text}}</h2>
-<input type="text" (keyup.enter)="changeTextHandler($event)">
+<input type="text" [(ngModel)]="text"/>
