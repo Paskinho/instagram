@@ -1,4 +1,4 @@
-import {Component, OnInit} from "@angular/core";
+import {Component} from "@angular/core";
 
 @Component({
   selector: 'inst-child',
@@ -6,12 +6,6 @@ import {Component, OnInit} from "@angular/core";
   styleUrls: ['./child.component.scss']
 })
 
-export class ChildComponent implements OnInit {
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
+export class ChildComponent {
+  name = "Steven"
 }

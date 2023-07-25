@@ -6,12 +6,8 @@ import {Component, OnInit} from "@angular/core";
   styleUrls: ['./parent.component.scss']
 })
 
-export class ParentComponent implements OnInit {
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
+export class ParentComponent  {
+  name = 'Uladzislau'
+  surname = "Paskanau"
 
 }
