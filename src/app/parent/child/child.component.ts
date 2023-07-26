@@ -1,9 +1,6 @@
 import {Component, EventEmitter, Input, Output} from "@angular/core";
 
-export interface Grade {
-  math: number
-  physic: number
-}
+
 
 @Component({
   selector: 'inst-child',
@@ -14,12 +11,13 @@ export interface Grade {
 export class ChildComponent {
 
 
-  @Output() sendGradeEvent = new EventEmitter<Grade>()
+  @Output() sendGradeEvent = new EventEmitter<string>()
+
+  inputGrade = ""
 
   sendGradeHandler(){
-    const math = 5
-    const physic = 4
-    this.sendGradeEvent.emit({math, physic})
+
+    this.sendGradeEvent.emit(this.inputGrade)
   }
 
 }
