@@ -1,10 +1,5 @@
 import {Component, OnInit} from "@angular/core";
-
-export interface Address {
-  city: string
-  street: string
-  house: number
-}
+import {Grade} from "./child/child.component";
 
 
 @Component({
@@ -14,11 +9,12 @@ export interface Address {
 })
 
 export class ParentComponent  {
-  name = 'Uladzislau'
-  surname = "Paskanau"
-  address: Address = {
-    city: "Minsk",
-    street:'Platonova',
-    house: 49
+
+  math?: number
+  physic?: number
+
+  getGrades(value: Grade) {
+    this.math = value.math
+    this.physic = value.physic
   }
 }
