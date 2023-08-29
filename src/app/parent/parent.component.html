@@ -1,8 +1,9 @@
 <div *ngIf="isLoading"><h1>Loading...</h1></div>
 
 
-<div>
-<div *ngFor="let lesson of lessons">
+
+<ng-container *ngIf="!isLoading">
+<div  *ngFor="let lesson of lessons">
   <div>
     <h3>{{lesson.title}}</h3>
 <div>
@@ -16,6 +17,5 @@
 
   </div>
 </div>
-
-</div>
+</ng-container>
 

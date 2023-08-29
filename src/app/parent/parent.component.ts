@@ -17,7 +17,7 @@ interface Lesson {
   styleUrls: ['./parent.component.scss'],
 })
 export class ParentComponent {
-  isLoading = true
+  isLoading = false
   lessons: Lesson[] = [
     {
       id: 0,
