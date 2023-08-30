@@ -2,3 +2,13 @@
 <!--&lt;!&ndash;<h1 [ngClass]="'default success'">Lorem5 ipsum </h1>&ndash;&gt;-->
 <!--&lt;!&ndash;<h1 [ngClass]="{default: true, success: isSuccess, error: !isSuccess}">Lorem5 ipsum </h1>&ndash;&gt;-->
 <!--<h1 [ngStyle]="{color: 'blue', margin: '20px'}">Lorem5 ipsum </h1>-->
+
+<div>
+<div *ngFor="let el of fruits">
+  <h3>name: {{el.name}}</h3>
+  price: {{el.price}}
+</div>
+
+<br/>
+
+</div>
