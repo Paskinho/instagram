@@ -4,9 +4,11 @@
 <!--<h1 [ngStyle]="{color: 'blue', margin: '20px'}">Lorem5 ipsum </h1>-->
 
 <div>
-<div *ngFor="let el of fruits">
-  <h3>name: {{el.name}}</h3>
-  price: {{el.price}}
+<div *ngFor="let fruit of fruits; even as even; odd as odd">
+  <p class="default"
+  [ngClass]="{success: even, error: odd}">
+  name {{fruit.name}} - price {{fruit.price}}
+  </p>
 </div>
 
 <br/>
