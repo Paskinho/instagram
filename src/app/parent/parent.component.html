@@ -6,11 +6,12 @@
 <div>
 <div *ngFor="let fruit of fruits; even as even; odd as odd">
   <p class="default"
-  [ngClass]="{success: even, error: odd}">
-  name {{fruit.name}} - price {{fruit.price}}
+  [ngClass]="{success: even, error: odd}"
+  *ngIf="fruit.price > 7">
+    name {{fruit.name}}
   </p>
 </div>
 
-<br/>
+
 
 </div>
