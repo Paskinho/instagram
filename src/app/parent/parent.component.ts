@@ -13,7 +13,11 @@ interface Fruit {
   styleUrls: ['./parent.component.scss'],
 })
 export class ParentComponent implements OnInit {
+  value = 0
+
   constructor(private valueService: ValueService) {}
   public test = 0
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.value = this.valueService.value
+  }
 }
