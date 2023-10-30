@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { ValueService } from '../../services/value.service'
 
 interface Fruit {
   id: string
@@ -11,8 +12,8 @@ interface Fruit {
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.scss'],
 })
-export class ParentComponent {
-  title = 'Lorem ipsum dolor sit amet'
-  url = 'https://angular.io/api/common/SlicePipe'
-  date = new Date(2022, 4, 12, 10)
+export class ParentComponent implements OnInit {
+  constructor(private valueService: ValueService) {}
+  public test = 0
+  ngOnInit(): void {}
 }
