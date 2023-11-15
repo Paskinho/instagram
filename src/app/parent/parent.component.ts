@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { ValueService } from '../../services/value.service'
+// import { ValueService } from '../../services/value.service'
 
 interface Fruit {
   id: string
@@ -15,9 +15,9 @@ interface Fruit {
 export class ParentComponent implements OnInit {
   value = 0
 
-  constructor(private valueService: ValueService) {}
+  constructor() {}
   public test = 0
   ngOnInit(): void {
-    this.value = this.valueService.value
+    // this.value = this.valueService.value
   }
 }
