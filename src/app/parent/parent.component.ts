@@ -19,6 +19,10 @@ export class ParentComponent implements OnInit {
   constructor(private valueService: ValueService) {}
   public test = 0
   ngOnInit(): void {
-    // this.value = this.valueService.value
+    this.value = this.valueService.value
+  }
+
+  addValueHandler() {
+    this.valueService.add()
   }
 }
